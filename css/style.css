@@ -137,7 +137,27 @@ h1,h2,h3,h4,h5,h6{
  color: #f96816;
  text-decoration: underline;
 }
-
+form input{
+ font-size: 20px;
+ font-weight: 100;
+}
+.wrapper{
+ position: relative;
+}
+.wrapper input{
+ font-size:20px;
+}
+.wrapper i{
+ display: inline;
+ color: white;
+ position: absolute;
+ left:90%;
+ top:45px;
+}
+.wrapper i:hover{
+ cursor: pointer;
+ color: rgb(204, 34, 34);
+}
 
 
 /* Button */
@@ -160,7 +180,7 @@ h1,h2,h3,h4,h5,h6{
  background-color: #ff7b39;
 }
 .secondary-btn{
- padding: 0.7rem 2rem;
+ padding: 0.7rem 10px;
  height: 2.7rem;
  display: block;
  border: 1px solid #f4f4f4;
@@ -192,6 +212,9 @@ h1,h2,h3,h4,h5,h6{
 @media(max-width:768px){
  body{
   overflow: auto;
+ }
+ .secondary-btn{
+  padding:10px 5px;
  }
  #right{
   display: none;

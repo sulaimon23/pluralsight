@@ -4,6 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Plural Sight || login</title>
+ <link rel="stylesheet" href="fontawesome/css/all.css">
  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,14 +16,15 @@
     </div>
     <form action="">
      <div>
-      <label for="">Email or Username</label>
-      <input type="text" class="text-input">
+      <label for="" >Email or Username</label>
+      <input type="text" id="user" class="text-input" />
      </div>
-     <div>
+     <div class="wrapper">
       <label for="">Password</label>
-      <input type="text" class="text-input">
+      <input type="password" class="text-input" id="pass" >
+     <i class="fa fa-eye" id="view" onclick="viewPass()"></i>
      </div>
-     <button type="submit" class="primary-btn">Sign In</button>
+     <button type="submit" class="primary-btn" onclick="check()">Sign In</button>
     </form>
     <div class="links">
      <a href="#">Forgot Password</a>
@@ -52,5 +54,6 @@
    </div>
   </div>
  </div>
+ <script src="js/script.js"></script>
 </body>
 </html>
